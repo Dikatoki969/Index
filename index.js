@@ -10,10 +10,21 @@ console.log(chalk.red(`██████╗ ██╗██╗  ██╗ █�
 ██████╔╝██║██║  ██╗██║  ██║   ██║   ╚██████╔╝██║  ██╗██║
 ╚═════╝ ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚═╝`));
 console.log(chalk.white('Welcome To My Script!\n'));
-CFonts.say('Loading...', {
-  font: 'simple',
-  animation: 'glow',
-  interval: 200 // Kecepatan animasi (ms)
+CFonts.say('DIKATOKI - OFFICIAL', {
+  font: '3d',
+  align: 'center',
+  colors: ['cyan', 'yellow'],
+  background: 'transparent',
+  letterSpacing: 2,
+  lineHeight: 2,
+  space: true,
+  gradient: ['#FF0000', '#0000FF'],
+  independentGradient: false,
+  transitionGradient: true
+});
+CFonts.log('Loading. . . . . . . .', { 
+  font: 'console',
+  colors: ['green']
 });
 require('./settings/config');
 process.on("uncaughtException", console.error);
